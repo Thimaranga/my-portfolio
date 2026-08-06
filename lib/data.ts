@@ -92,6 +92,7 @@ export const projects = [
       "Used AWS services including ECS, Lambda, CloudWatch, and S3 for deployment, monitoring, and infrastructure.",
     ],
     role: "Technical Lead",
+    figmaUrl: "https://www.figma.com/deck/G6SzvkccJKMrMbDnF2ky7x/Untitled?node-id=1-42&t=sQXfAaYA229HHWeL-1"
   },
   {
     name: "Digiratina AI",
