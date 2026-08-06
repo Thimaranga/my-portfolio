@@ -1,6 +1,6 @@
 # Thushal Himaranga — Portfolio
 
-A Next.js (App Router) portfolio built from your CV, styled as a systems/monitoring
+A Next.js (App Router) portfolio built from my CV, styled as a systems/monitoring
 console — a nod to the Docker/Jenkins/Grafana/Prometheus stack you actually work in,
 rather than a generic template.
 
