@@ -11,7 +11,7 @@ export const profile = {
   degree: "B.ICT (Hons)",
   summary:
     "Results-driven software engineer with 5+ years building scalable, high-performance enterprise applications across logistics, telecommunications, and real estate. Experienced leading development teams, driving technical decisions, and shipping reliable, business-focused systems.",
-  yearsExperience: 5,
+  yearsExperience: "5+",
 };
 
 export const stats = [
@@ -144,7 +144,7 @@ export const projects = [
     stack: ["Angular", "Spring Boot", "PostgreSQL"],
     description:
       "One of the most complex projects handling the end-to-end delivery flow of an enterprise solution.",
-    points: ["Full stack development.", "Code reviewing and managing team.", "Deploying services and giving releases."],
+    points: ["Full stack development.", "Code reviewing and managing team.", "Managed service deployments and release orchestration."],
     role: "Full-Stack Developer",
   },
   {
@@ -152,7 +152,7 @@ export const projects = [
     region: "Internal",
     stack: ["React", "Spring WebFlux", "PostgreSQL"],
     description: "Enterprise employee management platform built on a reactive Spring backend.",
-    points: ["Full stack development.", "Deploying services and giving releases."],
+    points: ["Full stack development.", "Engineered and deployed reactive REST endpoints, streamlining internal deployment cycles."],
     role: "Full-Stack Developer",
     figmaUrl:
       "https://www.figma.com/proto/Ad9xg6iPMrlehsS6ctDgG4/Enterprise-Management-System?node-id=9228-17862&starting-point-node-id=136%3A265&scaling=contain&content-scaling=fixed",
