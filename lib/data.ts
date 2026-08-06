@@ -27,7 +27,7 @@ export const experience = [
     company: "Digiratina Technology Solutions Pte Ltd",
     location: "Singapore (Remote)",
     period: "Apr 2025 – Mar 2026",
-    current: true,
+    current: false,
     points: [
       "Led architecture reviews and collaborated with stakeholders to deliver scalable, business-aligned solutions.",
       "Integrated AI/NLP models for intelligent data query processing.",
@@ -144,15 +144,15 @@ export const projects = [
     stack: ["Angular", "Spring Boot", "PostgreSQL"],
     description:
       "One of the most complex projects handling the end-to-end delivery flow of an enterprise solution.",
-    points: ["Full stack development.", "Code reviewing and managing team.", "Deploying frontend and giving releases."],
+    points: ["Full stack development.", "Code reviewing and managing team.", "Deploying services and giving releases."],
     role: "Full-Stack Developer",
   },
   {
     name: "EMS — Employee Management System",
-    region: "",
+    region: "Internal",
     stack: ["React", "Spring WebFlux", "PostgreSQL"],
     description: "Enterprise employee management platform built on a reactive Spring backend.",
-    points: [],
+    points: ["Full stack development.", "Deploying services and giving releases."],
     role: "Full-Stack Developer",
     figmaUrl:
       "https://www.figma.com/proto/Ad9xg6iPMrlehsS6ctDgG4/Enterprise-Management-System?node-id=9228-17862&starting-point-node-id=136%3A265&scaling=contain&content-scaling=fixed",
