@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --color-base: 10 17 32;
+  --color-surface: 17 27 46;
+  --color-surface-2: 22 35 58;
+  --color-border: 35 51 80;
+  --color-cyan: 79 209 197;
+  --color-cyan-dim: 44 122 115;
+  --color-amber: 245 166 35;
+  --color-amber-dim: 138 93 20;
+  --color-ink: 231 237 247;
+  --color-muted: 133 146 172;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html:not(.dark) {
+  color-scheme: light;
+  --color-base: 248 250 252;
+  --color-surface: 255 255 255;
+  --color-surface-2: 241 245 249;
+  --color-border: 226 232 240;
+  --color-cyan: 8 145 178;
+  --color-cyan-dim: 14 116 144;
+  --color-amber: 217 119 6;
+  --color-amber-dim: 180 83 9;
+  --color-ink: 15 23 42;
+  --color-muted: 71 85 105;
+}
+
+body {
+  background-color: rgb(var(--color-base));
+  color: rgb(var(--color-ink));
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+::selection {
+  background-color: rgb(var(--color-cyan));
+  color: rgb(var(--color-base));
+}
+
+/* visible keyboard focus */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #4fd1c5;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.bg-grid-pattern {
+  background-image: linear-gradient(to right, #16233a 1px, transparent 1px),
+    linear-gradient(to bottom, #16233a 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.panel-label {
+  font-family: var(--font-jetbrains-mono);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  color: #8592ac;
+}
+
+.status-dot {
+  box-shadow: 0 0 0 3px rgba(79, 209, 197, 0.15);
+}
