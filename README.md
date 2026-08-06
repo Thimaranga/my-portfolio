@@ -1,7 +1,7 @@
 # Thushal Himaranga — Portfolio
 
 A Next.js (App Router) portfolio built from my CV, styled as a systems/monitoring
-console — a nod to the Docker/Jenkins/Grafana/Prometheus stack you actually work in,
+console — a nod to the Docker/Jenkins/Grafana/Prometheus stack, I actually work in,
 rather than a generic template.
 
 - **Frontend:** Next.js 14, React 18, TypeScript, Tailwind CSS
@@ -10,7 +10,7 @@ rather than a generic template.
   for Nodemailer/Resend, or point it at a Spring Boot service later, without touching
   the frontend.
 
-You'll need Node.js 18+ installed. Then, from this folder:
+We'll need Node.js 18+ installed. Then, from this folder:
 
 ```bash
 npm install
