@@ -18,14 +18,14 @@ export const stats = [
   { label: "Years Experience", value: "5+" },
   { label: "Production Systems Shipped", value: "9" },
   { label: "Domains Covered", value: "3" },
-  { label: "Team Role", value: "Tech Lead" },
+  { label: "Latest Team Role", value: "Tech Lead" },
 ];
 
 export const experience = [
   {
     role: "Associate Tech Lead – Full Stack",
     company: "Digiratina Technology Solutions Pte Ltd",
-    location: "Singapore",
+    location: "Singapore (Remote)",
     period: "Apr 2025 – Mar 2026",
     current: true,
     points: [
@@ -40,7 +40,7 @@ export const experience = [
   {
     role: "Senior Software Engineer",
     company: "Digiratina Technology Solutions Pte Ltd",
-    location: "Singapore",
+    location: "Singapore (Remote)",
     period: "Apr 2024 – Mar 2025",
     current: false,
     points: [
@@ -54,7 +54,7 @@ export const experience = [
   {
     role: "Software Engineer",
     company: "Digiratina Technology Solutions Pte Ltd",
-    location: "Singapore",
+    location: "Singapore (Remote)",
     period: "Nov 2021 – Mar 2024",
     current: false,
     points: [
@@ -95,7 +95,7 @@ export const projects = [
   },
   {
     name: "Digiratina AI",
-    region: "Singapore",
+    region: "Singapore (Remote)",
     stack: ["React", "Python", "FastAPI", "Redis", "PostgreSQL"],
     description:
       "AI agent that connects to company databases and answers natural-language questions for users regardless of technical or database knowledge.",
@@ -105,6 +105,8 @@ export const projects = [
       "Implemented CI/CD pipelines using Jenkins and Bitbucket with Docker-based containerization.",
     ],
     role: "Technical Team Lead",
+    figmaUrl:
+      "https://www.figma.com/proto/Q6Fgz7132pRr5bymAul3Sr/HUBBED-AI-Assistant--Copy-?node-id=311-8787&p=f&t=vcodGdIrfRpGjKIw-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=311%3A8787"
   },
   {
     name: "Hutly (Bondable / Platform)",
@@ -116,6 +118,8 @@ export const projects = [
       "Acted as Senior Developer, contributing as a full-stack developer across the project.",
     ],
     role: "Senior Developer",
+    figmaUrl:
+      "https://www.figma.com/proto/ApCEXkBjtlZci9daewFqX5/Bondable?node-id=458-3091&p=f&t=h5J3vmtIkfKCvL51-0&scaling=scale-down&content-scaling=fixed&page-id=248%3A1920&starting-point-node-id=458%3A3091&show-proto-sidebar=1"
   },
   {
     name: "Ooredoo",
@@ -130,6 +134,8 @@ export const projects = [
       "Implemented Docker-based containerization with Jenkins and Bitbucket CI/CD.",
     ],
     role: "Senior Full-Stack Developer",
+    figmaUrl:
+      "https://www.figma.com/proto/3iAcwllRctEcWrArS0VZFB/Ooredoo-Phase-2--Copy-?node-id=7-45&p=f&t=jyIR7tDPPXwKpmPq-0&scaling=contain&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=174%3A69",
   },
   {
     name: "Dialog Workflow",
@@ -147,6 +153,8 @@ export const projects = [
     description: "Enterprise employee management platform built on a reactive Spring backend.",
     points: [],
     role: "Full-Stack Developer",
+    figmaUrl:
+      "https://www.figma.com/proto/Ad9xg6iPMrlehsS6ctDgG4/Enterprise-Management-System?node-id=9228-17862&starting-point-node-id=136%3A265&scaling=contain&content-scaling=fixed",
   },
 ];
 
