@@ -10,7 +10,7 @@ export const profile = {
   availability: "Immediately Available",
   degree: "B.ICT (Hons)",
   summary:
-    "Results-driven software engineer with 5+ years building scalable, high-performance enterprise applications across logistics, telecommunications, and real estate. Experienced leading development teams, driving technical decisions, and shipping reliable, business-focused systems.",
+    "Results-driven software engineer with 5+ years building scalable, high-performance enterprise applications across logistics, telecommunications, and real estate. Experienced leading development teams, driving technical decisions, and shipping reliable, business-focused systems, including workflow automation with tools like n8n.",
   yearsExperience: "5+",
 };
 
@@ -33,9 +33,10 @@ export const experience = [
       "Integrated AI/NLP models for intelligent data query processing.",
       "Optimized PostgreSQL performance through indexing and query tuning.",
       "Implemented Docker-based containerization with Jenkins and Bitbucket CI/CD to automate scalable, reliable deployments.",
+      "Worked with workflow automation tools such as n8n to automate business processes.",
       "Mentored junior developers through code reviews and technical guidance.",
     ],
-    stack: ["Docker", "Jenkins", "Bitbucket CI/CD", "PostgreSQL", "AI/NLP"],
+    stack: ["Docker", "Jenkins", "Bitbucket CI/CD", "PostgreSQL", "AI/NLP", "n8n"],
   },
   {
     role: "Senior Software Engineer",
@@ -90,6 +91,7 @@ export const projects = [
       "Acted as technical lead for the project.",
       "Owned system architecture design, requirement gathering, and high-performance feature development.",
       "Used AWS services including ECS, Lambda, CloudWatch, and S3 for deployment, monitoring, and infrastructure.",
+      "Built an n8n workflow to automate the customer onboarding process.",
     ],
     role: "Technical Lead",
     figmaUrl: "https://www.figma.com/deck/G6SzvkccJKMrMbDnF2ky7x/Untitled?node-id=1-42&t=sQXfAaYA229HHWeL-1"
@@ -183,6 +185,35 @@ export const skillGroups = [
   {
     label: "AI Integration",
     skills: ["AI Agents", "NLP Integration (GPT, Gemini, DeepSeek)", "LLM-Based Database Query Systems"],
+  },
+];
+
+// Derived from how central each skill is across the roles in `experience`.
+export const topSkills = [
+  { name: "Java / Spring Boot", value: 90 },
+  { name: "Angular / React / Next.js", value: 85 },
+  { name: "Microservices & System Design", value: 88 },
+  { name: "Docker & CI/CD", value: 85 },
+  { name: "PostgreSQL / MongoDB", value: 80 },
+  { name: "AI / NLP Integration", value: 72 },
+];
+
+// Three broad pillars distilled from skillGroups, for the "core competencies" band.
+export const competencies = [
+  {
+    label: "Full-Stack Development",
+    icon: "code",
+    description: "End-to-end delivery across Angular, React, Next.js on the front end and Spring Boot, FastAPI on the back end.",
+  },
+  {
+    label: "System Architecture",
+    icon: "server",
+    description: "Microservices, service discovery, and scalable API design for high-traffic enterprise systems.",
+  },
+  {
+    label: "DevOps & Cloud",
+    icon: "cloud",
+    description: "Docker-based CI/CD with Jenkins & Bitbucket, plus AWS ECS/Lambda and Grafana/Prometheus observability.",
   },
 ];
 
