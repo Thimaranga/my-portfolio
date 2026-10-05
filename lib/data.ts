@@ -203,7 +203,7 @@ export const builds = [
       "Redis answer cache to keep repeat questions fast and model costs low.",
     ],
     stack: ["React", "Recharts", "FastAPI", "PostgreSQL", "Redis", "OpenAI", "Docker"],
-    liveUrl: "",
+    liveUrl: "https://demo.ai-assistant.thushalhimaranga.site/",
   },
   {
     name: "AI Lead Automation",
