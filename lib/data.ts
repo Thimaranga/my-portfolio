@@ -164,7 +164,7 @@ export const projects = [
 // Personal builds with public demos. Shown in the "Recent builds" section.
 export const builds = [
   {
-    name: "ShiftBook",
+    name: "Holdfast",
     kind: "Multi-tenant SaaS",
     description:
       "Booking platform for salons and clinics: public booking pages, a staff calendar, owner dashboards, card deposits and a platform admin.",
