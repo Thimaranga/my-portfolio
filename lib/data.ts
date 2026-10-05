@@ -1,23 +1,23 @@
 export const profile = {
   name: "Thushal Himaranga",
-  title: "Software Engineer",
-  subtitle: "Full-Stack · Systems Architecture · Microservices",
+  title: "Full-Stack & AI Engineer",
+  subtitle: "Full-Stack · AI Integration · Systems Architecture",
   location: "Al Nahda, Dubai",
   phone: "+97 1 522 278 552",
   email: "thushalhimaranga@live.com",
   linkedin: "t-himaranga-ponnamperuma",
   linkedinUrl: "https://linkedin.com/in/t-himaranga-ponnamperuma",
-  availability: "Immediately Available",
+  availability: "Open to work · Immediately available",
   degree: "B.ICT (Hons)",
   summary:
-    "Results-driven software engineer with 5+ years building scalable, high-performance enterprise applications across logistics, telecommunications, and real estate. Experienced leading development teams, driving technical decisions, and shipping reliable, business-focused systems, including workflow automation with tools like n8n.",
+    "Full-stack engineer and tech lead with 5+ years building scalable enterprise applications across logistics, telecommunications, and real estate. I lead teams, own architecture decisions, and ship AI features that hold up in production: LLM-powered database querying, retrieval-augmented support assistants, and workflow automation with n8n.",
   yearsExperience: "5+",
 };
 
 export const stats = [
   { label: "Years Experience", value: "5+" },
   { label: "Production Systems Shipped", value: "9" },
-  { label: "Domains Covered", value: "3" },
+  { label: "Recent AI & SaaS Builds", value: "4" },
   { label: "Latest Team Role", value: "Tech Lead" },
 ];
 
@@ -161,6 +161,66 @@ export const projects = [
   },
 ];
 
+// Personal builds with public demos. Shown in the "Recent builds" section.
+export const builds = [
+  {
+    name: "Holdfast",
+    kind: "Multi-tenant SaaS",
+    description:
+      "Booking platform for salons and clinics: public booking pages, a staff calendar, owner dashboards, card deposits and a platform admin.",
+    points: [
+      "Double bookings made impossible at the database level with a Postgres exclusion constraint on (staff, time range).",
+      "Stripe Checkout deposits with signed-webhook verification and a server-side re-check on return.",
+      "Tenant-scoped queries, scrypt password hashing, HttpOnly signed sessions and login lockout.",
+      "AI-written weekly business summary with a rule-based fallback; 21 API tests against real Postgres.",
+    ],
+    stack: ["React 19", "TypeScript", "FastAPI", "PostgreSQL", "Stripe", "OpenAI", "Vercel"],
+    liveUrl: "https://demo.shiftbook.thushalhimaranga.site/",
+  },
+  {
+    name: "AI Support Assistant",
+    kind: "RAG chatbot · Web + WhatsApp",
+    description:
+      "Customer support assistant that answers only from a business's own documents, on a website widget and on WhatsApp.",
+    points: [
+      "Hybrid retrieval (pgvector similarity + keyword search) with the source document cited in every answer.",
+      "Refuses to guess: unanswerable questions turn into a call-back request with a Telegram alert to the team.",
+      "Drop-in widget in a Shadow DOM (about 6 KB), right-to-left support, replies in the customer's language.",
+      "Provider-agnostic LLM layer: Gemini by default, OpenAI with one setting.",
+    ],
+    stack: ["FastAPI", "PostgreSQL + pgvector", "Gemini / OpenAI", "WhatsApp Cloud API", "JavaScript"],
+    liveUrl: "https://demo.ai-chatbot.thushalhimaranga.site/",
+  },
+  {
+    name: "AI Database Assistant",
+    kind: "Natural language to SQL",
+    description:
+      "Ask a business database questions in plain English and get the answer, a chart and the SQL that ran, on a 45,000-order retail dataset.",
+    points: [
+      "LLM generates SQL from the schema and a business glossary; never sees customer personal data.",
+      "Layered safety: SQL validator (single SELECT, known tables), read-only role, read-only transaction, 8 s timeout.",
+      "Self-correction: a failed query's error is fed back to the model once before giving up.",
+      "Redis answer cache to keep repeat questions fast and model costs low.",
+    ],
+    stack: ["React", "Recharts", "FastAPI", "PostgreSQL", "Redis", "OpenAI", "Docker"],
+    liveUrl: "",
+  },
+  {
+    name: "AI Lead Automation",
+    kind: "n8n workflows",
+    description:
+      "One n8n pipeline that captures leads from a web form and WhatsApp, qualifies them with AI and follows up automatically.",
+    points: [
+      "AI extracts intent, budget, timeline and language, scores leads hot/warm/cold and drafts a reply in the lead's language.",
+      "Hot-lead and failure alerts to Telegram; automatic 24-hour follow-ups.",
+      "Invoice reader: PDF email to structured rows (vendor, dates, VAT, total) in Google Sheets.",
+      "Workflows generated from code, with test copies that mock every external service.",
+    ],
+    stack: ["n8n", "Gemini / OpenAI", "WhatsApp Cloud API", "Google Sheets", "Docker"],
+    liveUrl: "",
+  },
+];
+
 export const skillGroups = [
   {
     label: "Backend",
@@ -235,17 +295,5 @@ export const volunteer = [
   { role: "Treasurer", org: "IEEE Student Branch, University of Jaffna" },
 ];
 
-export const references = [
-  {
-    name: "Mr. Nuwan Peshala",
-    role: "Event Executive, dmg events LLC",
-    phone: "+971 54 420 7286",
-    email: "nuwansayakkara@dmgevents.com",
-  },
-  {
-    name: "Mr. Shazan Hisham",
-    role: "IT Support Executive, The Choice Marketing Management & Events LLC",
-    phone: "+971 50 129 0737",
-    email: "support@thechoiceuae.com",
-  },
-];
+// Referee contact details are shared privately with employers on request.
+export const references = { onRequest: true, note: "Professional references available on request." };
