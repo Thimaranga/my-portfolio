@@ -63,15 +63,7 @@ export default function Contact() {
           </dl>
 
           <span className="panel-label">references</span>
-          <div className="mt-3 grid sm:grid-cols-2 gap-4">
-            {references.map((r) => (
-              <div key={r.name} className="border border-border p-4 text-sm">
-                <p className="text-ink">{r.name}</p>
-                <p className="text-muted text-xs mt-1">{r.role}</p>
-                <p className="text-muted text-xs mt-1">{r.phone}</p>
-              </div>
-            ))}
-          </div>
+          <p className="mt-3 border border-border p-4 text-sm text-muted">{references.note}</p>
         </div>
 
         <form onSubmit={handleSubmit} className="border border-border bg-surface p-6 sm:p-8 h-fit">

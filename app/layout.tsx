@@ -39,9 +39,9 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Thushal Himaranga — Software Engineer",
+  title: "Thushal Himaranga — Full-Stack & AI Engineer",
   description:
-    "Portfolio of Thushal Himaranga, Full-Stack Software Engineer specializing in scalable systems, microservices, and API architecture.",
+    "Portfolio of Thushal Himaranga, full-stack engineer and tech lead in Dubai: scalable systems, microservices, and production AI integration.",
 };
 
 export default function RootLayout({
