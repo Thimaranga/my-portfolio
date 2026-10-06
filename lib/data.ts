@@ -3,14 +3,14 @@ export const profile = {
   title: "Full-Stack & AI Engineer",
   subtitle: "Full-Stack · AI Integration · Systems Architecture",
   location: "Al Nahda, Dubai",
-  phone: "+97 1 522 278 552",
+  phone: "+97 1 581 503 537",
   email: "thushalhimaranga@live.com",
   linkedin: "t-himaranga-ponnamperuma",
   linkedinUrl: "https://linkedin.com/in/t-himaranga-ponnamperuma",
   availability: "Open to work · Immediately available",
   degree: "B.ICT (Hons)",
   summary:
-    "Full-stack engineer and tech lead with 5+ years building scalable enterprise applications across logistics, telecommunications, and real estate. I lead teams, own architecture decisions, and ship AI features that hold up in production: LLM-powered database querying, retrieval-augmented support assistants, and workflow automation with n8n.",
+    "Full-stack engineer and tech lead with 5+ years building scalable enterprise applications across logistics, telecommunications, and real estate. I lead teams and client engagements, from requirement gathering and client presentations to architecture decisions and deployment, and ship AI features that hold up in production: LLM-powered database querying, retrieval-augmented support assistants, and workflow automation with n8n.",
   yearsExperience: "5+",
 };
 
@@ -23,20 +23,33 @@ export const stats = [
 
 export const experience = [
   {
+    role: "Associate Tech Lead",
+    company: "Devetern Solutions LLC",
+    location: "Dubai",
+    period: "Apr 2026 – Aug 2026",
+    current: false,
+    points: [
+      "Architected a robust backend using Spring Boot and PostgreSQL to securely interface with live POS databases and process real-time transactions.",
+      "Implemented Redis caching to minimize database query latency and delivered a responsive React interface for intuitive business reporting.",
+      "Integrated OpenAI's GPT-4o to translate conversational user queries into complex database searches for non-technical retail staff.",
+    ],
+    stack: ["Spring Boot", "PostgreSQL", "Redis", "React", "OpenAI GPT-4o"],
+  },
+  {
     role: "Associate Tech Lead – Full Stack",
     company: "Digiratina Technology Solutions Pte Ltd",
     location: "Singapore (Remote)",
     period: "Apr 2025 – Mar 2026",
     current: false,
     points: [
-      "Led architecture reviews and collaborated with stakeholders to deliver scalable, business-aligned solutions.",
-      "Integrated AI/NLP models for intelligent data query processing.",
-      "Optimized PostgreSQL performance through indexing and query tuning.",
-      "Implemented Docker-based containerization with Jenkins and Bitbucket CI/CD to automate scalable, reliable deployments.",
-      "Worked with workflow automation tools such as n8n to automate business processes.",
-      "Mentored junior developers through code reviews and technical guidance.",
+      "Led architecture reviews and stakeholder alignment to translate business needs into scalable system designs.",
+      "Architected and deployed high-performance platforms on AWS (ECS, Lambda, CloudWatch, S3).",
+      "Spearheaded an in-house AI agent integrating GPT and Gemini to enable natural-language database querying for non-technical users.",
+      "Optimized PostgreSQL latency through indexing and query tuning, and standardized CI/CD workflows (Docker, Jenkins, Bitbucket) to accelerate deployments.",
+      "Orchestrated data pipelines and business process automation using n8n.",
+      "Mentored engineering teams through code reviews and technical guidance to elevate code quality and delivery velocity.",
     ],
-    stack: ["Docker", "Jenkins", "Bitbucket CI/CD", "PostgreSQL", "AI/NLP", "n8n"],
+    stack: ["AWS", "Docker", "Jenkins", "Bitbucket CI/CD", "PostgreSQL", "GPT / Gemini", "n8n"],
   },
   {
     role: "Senior Software Engineer",
@@ -45,25 +58,41 @@ export const experience = [
     period: "Apr 2024 – Mar 2025",
     current: false,
     points: [
-      "Built responsive UI using Angular and TypeScript.",
-      "Developed REST APIs with Spring Boot across MongoDB and Oracle databases.",
-      "Implemented microservices with Eureka service discovery.",
-      "Containerized applications using Docker.",
+      "Delivered a scalable telecom management system for Ooredoo and contributed to the Hutly fintech platform using Next.js and Node.js.",
+      "Built distributed backend services and REST APIs using Spring Boot, MongoDB and Oracle, with Eureka for service discovery.",
+      "Designed responsive, production-grade interfaces with Angular and TypeScript, collaborating closely with UX and QA teams.",
+      "Containerized services with Docker and streamlined deployments using Jenkins and Bitbucket pipelines.",
+      "Configured monitoring (Grafana, Prometheus, Opsgenie) and owned production support to accelerate incident resolution and minimize downtime.",
     ],
-    stack: ["Angular", "TypeScript", "Spring Boot", "MongoDB", "OracleDB", "Eureka"],
+    stack: ["Angular", "TypeScript", "Spring Boot", "Next.js", "Node.js", "MongoDB", "OracleDB", "Eureka", "Grafana", "Prometheus"],
   },
   {
     role: "Software Engineer",
     company: "Digiratina Technology Solutions Pte Ltd",
     location: "Singapore (Remote)",
-    period: "Nov 2021 – Mar 2024",
+    period: "Mar 2022 – Mar 2024",
     current: false,
     points: [
-      "Developed scalable backend services using Spring Boot within a microservices architecture.",
-      "Built frontend modules and responsive interfaces using Angular.",
-      "Participated in client requirement gathering, solution discussions, and UAT/SIT sessions to ensure successful delivery.",
+      "Promoted to Software Engineer on Dialog Workflow, taking greater ownership of full-stack development, code reviews and release management.",
+      "Moved to the Employee Management System (EMS), building core features with React and Spring WebFlux on PostgreSQL for a reactive, non-blocking backend.",
+      "Developed and maintained scalable Spring Boot services within a microservices architecture, with reusable Angular interfaces across both projects.",
+      "Allocated 50% to Advantis (Hayleys Group) to lead the UI revamp of a shipping crew management system from a legacy stack to React.",
+      "Took part in client requirement gathering and UAT/SIT cycles, and mentored newly onboarded Associate Software Engineers.",
     ],
-    stack: ["Spring Boot", "Angular", "Microservices"],
+    stack: ["Spring Boot", "Spring WebFlux", "Angular", "React", "PostgreSQL", "Microservices"],
+  },
+  {
+    role: "Associate Software Engineer",
+    company: "Digiratina Technology Solutions Pte Ltd",
+    location: "Singapore (Remote)",
+    period: "Nov 2021 – Mar 2022",
+    current: false,
+    points: [
+      "Started as a full-stack developer on the Dialog Workflow project, one of the company's most complex enterprise workflow solutions.",
+      "Contributed to backend development with Spring Boot and frontend modules with Angular under senior engineer guidance.",
+      "Assisted with requirement clarification, testing and bug fixing, and joined code reviews and pair programming in an Agile team.",
+    ],
+    stack: ["Spring Boot", "Angular", "Microservices", "Agile"],
   },
   {
     role: "Mobile Application Developer – Intern",
@@ -81,6 +110,20 @@ export const experience = [
 ];
 
 export const projects = [
+  {
+    name: "AI Assist powered by Devetern",
+    region: "Dubai",
+    stack: ["React", "Spring Boot", "Redis", "PostgreSQL", "OpenAI GPT-4o"],
+    description:
+      "Natural-language AI assistant for Point-of-Sale systems, letting business owners query sales analytics, inventory and transaction history without SQL knowledge.",
+    points: [
+      "Integrated OpenAI's GPT-4o to translate conversational queries into complex database searches for non-technical retail staff.",
+      "Architected an enterprise-grade Spring Boot and PostgreSQL backend that securely interfaces with live POS databases and real-time transaction data.",
+      "Implemented Redis caching to cut query latency and keep responses fast during peak retail hours.",
+      "Delivered a responsive React interface for business intelligence and real-time reporting.",
+    ],
+    role: "Associate Tech Lead",
+  },
   {
     name: "FreightExchange",
     region: "Australia",
@@ -103,8 +146,9 @@ export const projects = [
     description:
       "AI agent that connects to company databases and answers natural-language questions for users regardless of technical or database knowledge.",
     points: [
-      "Led the team as Technical Team Lead, guiding development and technical decisions.",
-      "Designed and built core system components and overall architecture.",
+      "Directed end-to-end delivery as Technical Lead: client presentations, requirement gathering, and guiding both development and BA teams.",
+      "Architected high-performance backend features and managed deployment across AWS (ECS, Lambda, S3, CloudWatch).",
+      "Optimized LLM token usage and API integrations to improve performance while significantly reducing operating costs.",
       "Implemented CI/CD pipelines using Jenkins and Bitbucket with Docker-based containerization.",
     ],
     role: "Technical Team Lead",
@@ -114,11 +158,14 @@ export const projects = [
   {
     name: "Hutly (Bondable / Platform)",
     region: "Australia",
-    stack: ["Next.js", "Node.js", "PostgreSQL"],
+    stack: ["Next.js", "Node.js", "PostgreSQL", "Stripe", "FrankieOne", "Equifax"],
     description:
       "Fintech and proptech project digitizing real estate contracts and streamlining property transactions.",
     points: [
       "Acted as Senior Developer, contributing as a full-stack developer across the project.",
+      "Developed and maintained Node.js backend APIs for contract data, transaction workflows and user account management.",
+      "Implemented secure handling of sensitive financial and tenancy data in line with fintech-grade data protection standards.",
+      "Delivered bug fixes, performance improvements and feature releases across both platforms in an agile team.",
     ],
     role: "Senior Developer",
     figmaUrl:
@@ -131,12 +178,14 @@ export const projects = [
     description:
       "Telecom number management system managing internal number allocation, tracking, and workflow operations.",
     points: [
-      "Acted as Senior Full-Stack Developer on the project.",
+      "Acted as Senior Full-Stack Developer and took on the Lead Developer role, guiding technical decisions and overseeing delivery.",
       "Involved in requirement gathering, system analysis, UAT, and SIT testing.",
-      "Provided production support and server/service-level monitoring for reliability.",
+      "Provided production support and worked with the client on security patches and maintenance of production servers.",
       "Implemented Docker-based containerization with Jenkins and Bitbucket CI/CD.",
+      "Set up service- and server-level monitoring with Prometheus, Grafana and Opsgenie.",
+      "Conducted code reviews to keep code quality consistent across the team.",
     ],
-    role: "Senior Full-Stack Developer",
+    role: "Lead Developer",
     figmaUrl:
       "https://www.figma.com/proto/3iAcwllRctEcWrArS0VZFB/Ooredoo-Phase-2--Copy-?node-id=7-45&p=f&t=jyIR7tDPPXwKpmPq-0&scaling=contain&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=174%3A69",
   },
@@ -146,15 +195,41 @@ export const projects = [
     stack: ["Angular", "Spring Boot", "PostgreSQL"],
     description:
       "One of the most complex projects handling the end-to-end delivery flow of an enterprise solution.",
-    points: ["Full stack development.", "Code reviewing and managing team.", "Managed service deployments and release orchestration."],
+    points: [
+      "Full stack development.",
+      "Peer-to-peer code reviews and team coordination to maintain code quality.",
+      "Deployed the frontend and managed releases.",
+      "Participated in SIT and UAT sessions before production releases.",
+      "Fixed production bugs under strict SLA timelines with minimal disruption to live operations.",
+    ],
     role: "Full-Stack Developer",
+  },
+  {
+    name: "Crew Management System (UI Revamp)",
+    region: "Hayleys Group / Advantis",
+    stack: ["React", "REST APIs", "Legacy Migration"],
+    description:
+      "Shipping crew management platform for seafarer records, crew deployment, onboarding and vessel assignment.",
+    points: [
+      "Led the platform's UI revamp at 50% allocation alongside EMS.",
+      "Migrated the legacy frontend to a modern, responsive React architecture.",
+      "Built modular components and state management for seafarer records, onboarding and vessel assignments.",
+      "Integrated REST APIs and improved UI performance with code splitting and memoization.",
+      "Participated in SIT/UAT testing and code reviews.",
+    ],
+    role: "UI Revamp Lead",
   },
   {
     name: "EMS — Employee Management System",
     region: "Internal",
     stack: ["React", "Spring WebFlux", "PostgreSQL"],
-    description: "Enterprise employee management platform built on a reactive Spring backend.",
-    points: ["Full stack development.", "Engineered and deployed reactive REST endpoints, streamlining internal deployment cycles."],
+    description: "Enterprise platform that streamlines the management of projects, stakeholders and employees, built on a reactive Spring backend.",
+    points: [
+      "Full stack development, including requirement gathering and system analysis.",
+      "Engineered and deployed reactive REST endpoints, streamlining internal deployment cycles.",
+      "Implemented Docker-based containerization with Jenkins and Bitbucket CI/CD.",
+      "Participated in UAT/SIT, provided production support, and monitored servers and services.",
+    ],
     role: "Full-Stack Developer",
     figmaUrl:
       "https://www.figma.com/proto/Ad9xg6iPMrlehsS6ctDgG4/Enterprise-Management-System?node-id=9228-17862&starting-point-node-id=136%3A265&scaling=contain&content-scaling=fixed",
@@ -224,7 +299,7 @@ export const builds = [
 export const skillGroups = [
   {
     label: "Backend",
-    skills: ["Java", "Spring Boot", "REST APIs", "Microservices", "FastAPI (Python)", "Node.js"],
+    skills: ["Java", "Spring Boot", "Spring WebFlux", "REST APIs", "Microservices", "FastAPI (Python)", "Node.js", "Redis"],
   },
   {
     label: "Frontend",
@@ -236,15 +311,19 @@ export const skillGroups = [
   },
   {
     label: "DevOps",
-    skills: ["Docker", "Jenkins", "Bitbucket CI/CD", "Nexus", "Containerization"],
+    skills: ["Docker", "Jenkins", "Bitbucket CI/CD", "Nexus", "Containerization", "n8n Workflow Automation"],
   },
   {
     label: "Observability & Cloud",
     skills: ["Grafana", "Prometheus", "Opsgenie", "AWS EC2", "AWS ECS", "CloudWatch", "Lambda", "S3"],
   },
   {
+    label: "Testing",
+    skills: ["JUnit 5", "Mockito", "PyTest", "Jest", "React Testing Library", "Unit, Integration, Regression & E2E"],
+  },
+  {
     label: "AI Integration",
-    skills: ["AI Agents", "NLP Integration (GPT, Gemini, DeepSeek)", "LLM-Based Database Query Systems"],
+    skills: ["AI Agents", "NLP Integration (GPT-4o, Gemini, DeepSeek)", "LLM-Based Database Query Systems"],
   },
 ];
 
