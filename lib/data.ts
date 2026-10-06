@@ -25,7 +25,7 @@ export const experience = [
   {
     role: "Associate Tech Lead",
     company: "Devetern Solutions LLC",
-    location: "Sri Lanka - Remote",
+    location: "Sri Lanka (Remote)",
     period: "Apr 2026 – Aug 2026",
     current: false,
     points: [
