@@ -37,3 +37,20 @@ components/
 lib/
   data.ts              Single source of truth for all my CV content
 ``
+
+## Contact form → n8n
+
+The contact form posts to `app/api/contact/route.ts`, which validates the message, drops spam
+(hidden honeypot field) and forwards it server-side to an n8n workflow. The n8n workflow triages the
+message with AI (job opportunity, freelance project, question, spam), saves it to Google Sheets,
+sends the sender an acknowledgement email and alerts me on Telegram.
+
+Set these in Vercel → Settings → Environment Variables (see `.env.example`):
+
+| Name | Value |
+|---|---|
+| `N8N_CONTACT_WEBHOOK_URL` | Production URL of the n8n webhook, ending in `/webhook/portfolio-contact` |
+| `N8N_CONTACT_SECRET` | Same value as the n8n Header Auth credential (header name `X-Portfolio-Secret`) |
+
+Without them, `npm run dev` just logs messages to the console, and production returns an error
+so the form tells visitors to email directly.

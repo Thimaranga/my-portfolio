@@ -5,7 +5,7 @@ import { profile, references } from "@/lib/data";
 
 export default function Contact() {
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
-  const [form, setForm] = useState({ name: "", email: "", message: "" });
+  const [form, setForm] = useState({ name: "", email: "", message: "", company_website: "" });
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -18,7 +18,7 @@ export default function Contact() {
       });
       if (!res.ok) throw new Error("Request failed");
       setStatus("sent");
-      setForm({ name: "", email: "", message: "" });
+      setForm({ name: "", email: "", message: "", company_website: "" });
     } catch {
       setStatus("error");
     }
@@ -67,6 +67,17 @@ export default function Contact() {
         </div>
 
         <form onSubmit={handleSubmit} className="border border-border bg-surface p-6 sm:p-8 h-fit">
+          {/* Honeypot: hidden from people, filled in by spam bots. */}
+          <div aria-hidden="true" className="absolute -left-[9999px] w-px h-px overflow-hidden">
+            <label htmlFor="company_website">Company website</label>
+            <input
+              id="company_website"
+              tabIndex={-1}
+              autoComplete="off"
+              value={form.company_website}
+              onChange={(e) => setForm({ ...form, company_website: e.target.value })}
+            />
+          </div>
           <div className="mb-5">
             <label htmlFor="name" className="panel-label block mb-2">
               name
@@ -113,7 +124,7 @@ export default function Contact() {
             {status === "sending" ? "Sending..." : "Send message"}
           </button>
           {status === "sent" && (
-            <p className="mt-3 text-xs font-mono text-cyan">Message sent. Thank you.</p>
+            <p className="mt-3 text-xs font-mono text-cyan">Message sent. A confirmation is on its way to your inbox.</p>
           )}
           {status === "error" && (
             <p className="mt-3 text-xs font-mono text-amber">
